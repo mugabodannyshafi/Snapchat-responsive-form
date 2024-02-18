@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: whitesmoke;
+}
+ form{
+    width: 240px;    
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+form .yellow-card{
+    height: 70px;
+    background: #fffc00;
+}
+form .yellow-card img{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    margin-top: 7%;
+}
+form .welcome{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+}
+form .login-google{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+form .login-google button{
+    color: #fffc00;
+    background: #000;
+    font-size: 10px;
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+form .trouble{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+form .or{
+    margin-top: 10px;
+    text-align: center;
+    color: grey;
+    font-size: 10px;
+}
+form .inputs{
+    position: relative;
+    padding: 20px;
+    padding-left: 30px;
+    width: 100%;
+    height: auto;
+}
+form .inputs input[type=email]{
+    margin-top: 25px;
+}
+.form-group{
+    position: relative;
+  }
+  .form-group input{
+    padding-bottom: 5px;
+    font-size: 10px;
+    width: 180px;
+    border: none;
+    border-bottom:1.5px solid grey;
+    background: transparent;
+    color: #000;
+    transition: 0.15s all ease;
+    outline: none;
+  }
+  .form-group input:focus{
+    border-bottom: 1px solid #000;
+  }
+  form .inputs input[type=email]{
+    margin-top: 25px;
+}
+  .form-group input:focus + .form-label,
+  .form-group input:not(:placeholder-shown) + .form-label {
+    transform: translate(5px, -22px) scale(0.9);
+    font-size: 14px;
+    color: #000;
+  }
+  .form-group input:focus + #form-label,
+  .form-group input:not(:placeholder-shown) + #form-label {
+    transform: translate(5px, -22px) scale(0.9);
+    font-size: 14px;
+    color: #000;
+  }
+  .form-group .form-label{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    font-size: 8px;
+    color: grey;
+    pointer-events: none;
+    transition: 0.15s all ease;
+  }
+  .form-group #form-label{
+    position: absolute;
+    top: 28px;
+    left: 0;
+    font-size: 8px;
+    color: grey;
+    pointer-events: none;
+    transition: 0.15s all ease;
+  }
+  .form-group input:focus + .form-label,
+  .form-group input:not(:placeholder-shown) + .form-label {
+    top: 15px;
+    left: -10px;
+    font-size: 8px;
+    color: grey;
+  }
+  .form-group input:focus + #form-label,
+  .form-group input:not(:placeholder-shown) + #form-label {
+    top: 35px;
+    left: -8px;
+    font-size: 8px;
+    color: grey;
+  }
+form .inputs .forgot{
+    font-size: 7px;
+    color: blue;
+    text-align: end;
+    margin-right: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+form .login{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+form .login button{
+    color: #000;
+    font-weight: 600;
+    background: #BBBBBB;
+    font-size: 11px;
+    width: 140px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+form .signup{
+    font-size: 7px;
+    text-align: center;
+    margin-top: 15px;
+}
+form .signup span{
+    color: gray;
+}
+form .signup b{
+    cursor: pointer;
+}
+ @media screen and (max-width: 450px) {
+    form{
+        height: 100%;
+        width: 100%;
+    }
+    form .yellow-card{
+        height: 12%;
+    }
+    form .yellow-card img{
+        margin-top: 7%;
+        width: 55px;
+        height: 55px;
+    }
+    form .welcome{
+        margin-top: 50px;
+    }
+    form .login-google button{
+        width: 70%;
+        height: 45px;
+        border-radius: 50px;
+        margin-left: 7%;
+        margin-top: 5%;
+        font-size: 13px;
+    }
+    form .trouble{
+        margin-top: 5%;
+        width: 100%;
+        font-size: 10px;
+    }
+    form .or{
+        margin-top: 5%;
+        text-align: center;
+        color: grey;
+        font-size: 17px;
+    }
+    form .inputs{
+        position: relative;
+        margin-top: 7%;
+        margin-left: 8%;
+    }
+    form .inputs input{
+        font-size: 17px;
+        width: 80%;
+        display: flex;
+        padding: 3px;
+    }
+    form .inputs #pass{
+        margin-top: 13%;
+    }
+    form .inputs .user{
+        font-size: 12px;
+        transition: .5s;
+        pointer-events: none;
+    }
+    form .inputs .password{
+        font-size: 12px;
+        transition: .5s;
+        position: absolute;
+        bottom: 34%;
+        left: 15%;
+    }
+    form .inputs input:focus + .password{
+        bottom: 50%;
+    }
+    form .inputs #username:focus{
+        border-bottom: 1px solid #000;
+    }
+    form .inputs .forgot{
+        font-size: 10px;
+        margin-right: 15%;
+        margin-top: 5%;
+    }
+    form .login{
+        margin-top: 7%;
+    }
+    form .login button{
+        width: 70%;
+        height: 45px;
+        border-radius: 50px;
+        margin-left: 7%;
+        margin-top: 5%;
+        font-size: 15px;
+    }
+    form .signup{
+        font-size: 11px;
+        margin-top: 10%;
+    }
+    .form-group #form-label{
+        top: 10px;
+    }
+    .form-group input:focus + #form-label,
+  .form-group input:not(:placeholder-shown) + #form-label {
+    top: 15px;
+  }
+  form .inputs .forgot{
+    font-size: 12px;
+    position: absolute;
+    height: 20px;
+    top: 85%;
+    left: 55%;
+  }
+ }
